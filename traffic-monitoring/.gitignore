@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.DS_Store
+Thumbs.db
+
+# keep data out of repo
+data/
+datasets/
+videos/
+sampled_frames/
+annotations/
+runs/
+splits_out/
+.ipynb_checkpoints/
+*.log
