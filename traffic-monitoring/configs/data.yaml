@@ -5,9 +5,12 @@ path: /content/drive/MyDrive/traffic_project/dataset_yolo
 train: images/train
 val: images/val
 test: images/test
-
+# Classes
 names:
   0: car
   1: bus
   2: truck
-  3: motorcycle
+  3: motorcycle 
+  4: matatu
+  5: number_plate
+nc: 6
