@@ -2,14 +2,14 @@
 from ultralytics import YOLO
 import argparse
 
-def train(data_yaml, epochs=50, imgsz=640, batch=16, device=0):
+def train(data_yaml, epochs=100, imgsz=320, batch=16, device=0):
     model = YOLO("yolov8s.pt")
     results = model.train(
         data=data_yaml,
-        epochs=epochs,
-        imgsz=imgsz,
-        batch=batch,          # increase to 16 or 32 on a proper GPU
-        device=device,
+        epochs=100,
+        imgsz=320,
+        batch=16,          
+        device=0,
         workers=4,
         cache=True,           # cache dataset in RAM — fine on a real server
         amp=True,
