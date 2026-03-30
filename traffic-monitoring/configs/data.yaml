@@ -1,10 +1,10 @@
 # Ultralytics dataset config template
 # Update 'path' to your dataset folder (Drive or local).
-path: /content/drive/MyDrive/traffic_project/dataset_yolo
+path: ../dataset
 
-train: images/train
-val: images/val
-test: images/test
+train: train/images
+val: val/images
+test: test/images
 # Classes
 names:
   0: car
