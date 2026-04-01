@@ -34,7 +34,10 @@ python splits/make_splits.py   --frames_root "/content/drive/MyDrive/traffic_pro
 ```bash
 python utils/prepare_yolo_dataset.py   --annotations_images_dir "/content/drive/MyDrive/traffic_project/annotations/images"   --annotations_labels_dir "/content/drive/MyDrive/traffic_project/annotations/labels"   --splits_dir "/content/drive/MyDrive/traffic_project/splits"   --dataset_out "/content/drive/MyDrive/traffic_project/dataset_yolo"
 ```
-
+### 4) Train YOLO model
+```bash
+python training/train.py --data configs/data.yaml --project training --model yolov8s.pt --epochs 100 --batch 16 --imgsz 640 --device 0
+```
 ## Notes
 - Keep large files out of GitHub. Use Drive (or sandbox storage).
 - `.gitignore` included.
