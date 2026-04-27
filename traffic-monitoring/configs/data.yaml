@@ -6,11 +6,5 @@ train: train/images
 val: val/images
 test: test/images
 # Classes
-names:
-  0: car
-  1: bus
-  2: truck
-  3: motorcycle 
-  4: matatu
-  5: number_plate
 nc: 6
+names: ['bus', 'car', 'matatu', 'motorcycle', 'number_plate', 'truck']

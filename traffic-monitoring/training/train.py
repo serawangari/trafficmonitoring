@@ -19,7 +19,7 @@ def train(data_yaml, epochs=100, imgsz=320, batch=16, device=0):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data', type=str, required=True, help='Path to data.yaml')
+    parser.add_argument('--data', type=str, required=True, help='')
     parser.add_argument('--epochs', type=int, default=50)
     parser.add_argument('--batch', type=int, default=16)
     parser.add_argument('--imgsz', type=int, default=640)
